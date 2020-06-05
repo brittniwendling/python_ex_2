@@ -1,0 +1,21 @@
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ source /Users/brittniwendling/opt/anaconda3/bin/activate
+ env /Users/brittniwendling/opt/anaconda3/bin/python /Users/brittniwendling/.vscode/extensions/ms-python.python-2020.5.80290/pythonFiles/lib/python/debugpy/wheels/debugpy/launcher 52192 -- "/Users/brittniwendling/Documents/Grad School/Summer 2020/HCI 584/python_ex_2/ex_2_task_1.py" 
+conda activate base
+(base) bash-3.2$  env /Users/brittniwendling/opt/anaconda3/bin/python /Users/brittniwendling/.vscode/extensions/ms-python.python-2020.5.80290/pythonFiles/lib/python/debugpy/wheels/debugpy/launcher 52192 -- "/Users/brittniwendling/Documents/Grad School/Summer 2020/HCI 584/python_ex_2/ex_2_task_1.py" 
+charding@iastate.edu Everything looks good!
+chris.edu - error: Error: required to have exactly 1 @, error code: 1
+chris@edu - error: Error: address needs to have exactly 1 ., error code: 4
+@bla.edu - error: Error: part before @ symbol must be between 3 and 16 chars, error code: 2
+throatwobblermangrove@mpfc.org - error: Error: part before @ symbol must be between 3 and 16 chars, error code: 2
+chris@X.com - error: Error:part between @ and . needs to be between 2 and 8 chars, error code: 5
+chris.harding@iastate.edu - error: Error: part before @ symbol must only have alfanum chars, error code: 3
+chris@pymart.biz - error: Error: part after . needs to be com, edu, org, or gov, error code: 7
+chris@letsgo!.org - error: Error: part between @ and . needs to only have alfanum chars, error code: 6
+chris@megasavings.org - error: Error:part between @ and . needs to be between 2 and 8 chars, error code: 5
+tc@tank.com - error: Error: part before @ symbol must be between 3 and 16 chars, error code: 2
+(base) bash-3.2$ conda activate base
+(base) bash-3.2$ 
