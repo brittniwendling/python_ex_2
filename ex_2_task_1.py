@@ -35,13 +35,39 @@
 # results1.txt
 
 def is_valid_email_address(s):
-    
     # your code here
+    num_at = s.count("@") # check to see how many @ symbols
+    if num_at != 1: # check if there is anything other than 1 @ symbol
+        return 1, "required to have  exactly 1 @"
 
-    
+    split_address = s.split("@") # split at the @ symbol
+    A = split_address[0] # variable for part before the @ symbol
+    after_at = split_address [1] # variable for part after the @ symbol
+
+    if len(A) < 3 or len(A) > 16: # check if part before @ has right num chars
+        return 2, "Error: part before @ symbol must be between 3 and 16 chars"
+
+    elif A.isalnum() == False: # check if part before @ has only alfanum chars
+        return 3, "Error: part before @ symbol must only have alfanum chars"
+
+    if after_at.count(".") != 1: # check num of . in split after @
+        return 4, "Error: address needs to have exactly 1 ."
+
+    second_split = after_at.split(".") # split into B and C before/after the .
+    B = second_split[0]
+    C = second_split[1]
+
+    if len(B) < 2 or len(B) > 8: # check lenth of B
+        return 5, "Error:part between @ and . needs to be between 2 and 8 chars"
+    elif B.isalnum() == False: # check if B is only alfanum characters
+        return 6, "Error: part between @ and . needs to only have alfanum chars"
+
+    if C not in ["com", "edu", "org", "gov"]: # check if C has appropriate ending chars
+        return 7, "Error: part after . needs to be com, edu, org, or gov"
+
+    return(None, "Everything looks good!") # address checks out - passes all tests
 
 
-    
 
 # This if ensures that the following is NOT run if this file was imported as a module (which we'll do next!)
 if __name__ == "__main__":
