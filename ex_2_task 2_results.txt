@@ -1,0 +1,13 @@
+please enter an email address:(base) bash-3.2$  cd "/Users/brittniwendling/Documents/Grad School/Summer 2020/HCI 584/python_exng/opt/anaconda3/bin/python /Users/brittniwendling/.vscode/extensions/ms-python.python-2020.5.80290/pythonFiles/lib/python/debugpy/wheels/debugpy/launcher 52245 -- "/Users/brittniwendling/Documents/Grad School/Summer 2020/HCI 584/python_ex_2/ex_2_task_2.py" 
+please enter an email address:wendling
+wendling is invalid!
+Reason: Error: required to have exactly 1 @
+Please try again - you have 2 attempts left
+please enter an email address:b@iastate.edu
+b@iastate.edu is invalid!
+Reason: Error: part before @ symbol must be between 3 and 16 chars
+Please try again - you have 1 attempts left
+please enter an email address:wendling@iastate.edu
+wendling@iastate.edu is valid!Good job.
+email is valid: wendling@iastate.edu
+(base) bash-3.2$ 
