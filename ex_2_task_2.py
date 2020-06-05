@@ -32,7 +32,7 @@
 # use ex_2_task_2 here instead once your function works!
 from ex_2_task_1 import is_valid_email_address as is_valid 
 
-gave_up = False
+gave_up = False # variable for when total attmepts run out
 attempts_left = 3 # set total number of attempts allowed
 
 # your code - start
@@ -41,24 +41,24 @@ while True:
     r, err_str = is_valid(email)
 
     if r == None: # no error messages
-        print(email, "is valid!")
+        print(email, "is valid!Good job.") # valid email
         break # jump out of loop
     
-    # error
-    attempts_left -= 1 # lose an attempt
+    # error happens
+    attempts_left = attempts_left - 1 # lose an attempt
 
-    # no attempts left - quit 
-    if attempts_left == 0:
+    # no attempts left - quit program
+    if attempts_left == 0: 
         gave_up = True
-        print("No attempts are left!")
-        break
+        print("Sorry - No attempts are left!")
+        break # quits the program and stops loop
 
-    print(email, "is invalid!")
-    print("Reason:", err_str)
-    print(f"Try again, {attempts_left} attempts left")
+    print(email, "is invalid!") # tells invalid email
+    print("Reason:", err_str) # gives error code
+    print(f"Please try again - you have {attempts_left} attempts left") # shows num attempts left
 
 # your code - end
-if not gave_up:
+if not gave_up: # not gave_up = email is valid
     print("email is valid:", email)
 else:
     print("email is invalid:", email)
