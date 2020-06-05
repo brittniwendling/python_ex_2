@@ -38,7 +38,7 @@ def is_valid_email_address(s):
     # your code here
     num_at = s.count("@") # check to see how many @ symbols
     if num_at != 1: # check if there is anything other than 1 @ symbol
-        return 1, "required to have  exactly 1 @"
+        return 1, "Error: required to have exactly 1 @"
 
     split_address = s.split("@") # split at the @ symbol
     A = split_address[0] # variable for part before the @ symbol
